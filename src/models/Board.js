@@ -2,6 +2,7 @@ import { Cell } from "./Cell"
 
 export class Board {
     cells = []
+    cellsForRender = []
 
     initCells(){
         for(let row=0;row<8; row++){
