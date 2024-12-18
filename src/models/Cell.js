@@ -15,5 +15,6 @@ export class Cell {
         this.figure = figure
         this.available = false
         this.id = Math.random()
+        
     }
 }

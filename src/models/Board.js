@@ -2,8 +2,7 @@ import { Cell } from "./Cell"
 
 export class Board {
     cells = []
-    cellsForRender = []
-
+    id = Math.random()
     initCells(){
         for(let row=0;row<8; row++){
             let totalRow = []
@@ -16,5 +15,15 @@ export class Board {
             }
             this.cells.push(totalRow)
         }
+    }
+
+    getArray(){
+        let total = []
+        this.cells.map((row)=>{
+            row.map((item)=>{
+                total.push(item)
+            })
+        })
+        return total
     }
 }
