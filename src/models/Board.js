@@ -26,4 +26,14 @@ export class Board {
         })
         return total
     }
+
+    getCell(x, y){
+        return this.cells[y][x]
+    }
+
+    addFigures(){
+
+    }
+
+
 }

@@ -11,6 +11,7 @@ export class Figure{
         this.cell = cell
         this.cell.figure = this
         this.logo = null
+        this.name = figureNames.figure
         this.id = Math.random()
     }
 
